@@ -17,7 +17,7 @@
 ############################  SETUP PARAMETERS
 app_name='spf13-vim'
 app_dir="$HOME/.spf13-vim-3"
-[ -z "$git_uri" ] && git_uri='https://github.com/spf13/spf13-vim.git'
+[ -z "$git_uri" ] && git_uri='https://github.com/Raigen/spf13-vim.git'
 git_branch='3.0'
 debug_mode='0'
 fork_maintainer='0'
@@ -194,5 +194,5 @@ clone_vundle    "Successfully cloned vundle"
 
 setup_vundle    "Now updating/installing plugins using Vundle"
 
-msg             "\nThanks for installing $app_name."
+msg             "\nThanks for installing Raigen's fork of $app_name."
 msg             "© `date +%Y` http://vim.spf13.com/"
