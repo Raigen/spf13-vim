@@ -41,8 +41,8 @@ imap <F1> <Esc>
 vmap <F1> <Esc>
 
 " mapping for moving through the buffers
-nnoremap <C-J> :bnext<cr>
-nnoremap <C-K> :bprevious<cr>
+nnoremap <C-K> :bnext<cr>
+nnoremap <C-J> :bprevious<cr>
 
 nnoremap <F5> :UndotreeToggle<cr>
 
