@@ -71,5 +71,6 @@ let g:ctrlp_cmd = 'CtrlPMRU'
 
 map ; :
 
+autocmd BufRead,BufNewFile *.cson set ft=coffee
 autocmd FileType coffee setl colorcolumn=120
 autocmd FileType coffee setl foldmethod=indent nofoldenable
