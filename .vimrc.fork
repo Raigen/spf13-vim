@@ -44,6 +44,8 @@ vmap <F1> <Esc>
 nnoremap <C-K> :bnext<cr>
 nnoremap <C-J> :bprevious<cr>
 
+nnoremap <silent> <leader>w :bp\|bd #<cr>
+
 nnoremap <F5> :UndotreeToggle<cr>
 
 set noeb vb t_vb=
@@ -56,8 +58,6 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-set guioptions -=m
-
 let g:vim_json_syntax_conceal=0
 
 let g:syntastic_javascript_checkers =['jshint']
@@ -68,9 +68,11 @@ let g:syntastic_coffee_checkers = ['coffee']
 let g:signify_vcs_list = ['git']
 
 let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_extensions = ['funky']
 
 map ; :
 
+autocmd BufEnter * silent! lcd %:p:h
 autocmd BufRead,BufNewFile *.cson set ft=coffee
 autocmd FileType coffee setl colorcolumn=120
 autocmd FileType coffee setl foldmethod=indent nofoldenable
