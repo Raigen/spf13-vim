@@ -5,6 +5,7 @@ Bundle 'matze/vim-move'
 
 " Web
 Bundle 'mustache/vim-mustache-handlebars'
+Bundle 'jimmyhchan/dustjs.vim'
 Bundle 'jamescarr/snipmate-nodejs'
 Bundle 'mattn/emmet-vim'
 
